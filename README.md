@@ -17,6 +17,7 @@ Screenshots
 <img width="352" alt="Screenshot 2023-08-06 at 11 15 11 AM" src="https://github.com/Rik-11-01/todolist/assets/105990860/87c378e1-8459-4439-96bc-1db8856d8ac8">
 <img width="352" alt="Screenshot 2023-08-06 at 11 15 18 AM" src="https://github.com/Rik-11-01/todolist/assets/105990860/73a1fc57-4c10-497c-8fec-649f0f7ef754">
  </p>
+ 
 Libraries & Frameworks
 ------
 - [Firebase for iOS](https://firebase.google.com/docs/ios/setup)  
@@ -25,6 +26,7 @@ Libraries & Frameworks
 
 
 Developed by
+------
 Ritik Raman -  ritikraman01@gmail.com
 
 The main purpose behind this project is to practice some iOS basics, so feel free to contribute!
