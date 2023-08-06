@@ -15,16 +15,17 @@ class registerviewmodel:ObservableObject{
     init(){}
     
     func register(){
-        guard validate()else{
+        guard validate() else{
             return
         }
         Auth.auth().createUser(withEmail: email, password: password) { result, error in
             guard let userId=result?.user.uid else{
                 return
             }
-            self.insertuserid(id: userId)
+            self.insertuserid(id:userId)
         }
     }
+    
     private func insertuserid(id:String){
         let newuser=user(id: id, name: name, email: email, joined: Date.timeIntervalSinceReferenceDate)
         let db=Firestore.firestore()
@@ -34,7 +35,7 @@ class registerviewmodel:ObservableObject{
         
     }
     
-    func validate()->Bool{
+    private func validate()->Bool{
         guard !name.trimmingCharacters(in: .whitespaces).isEmpty,
               !email.trimmingCharacters(in: .whitespaces).isEmpty,
               !password.trimmingCharacters(in: .whitespaces).isEmpty else{

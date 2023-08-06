@@ -31,7 +31,7 @@ struct button_custom: View {
 struct button_custom_Previews: PreviewProvider {
     static var previews: some View {
         button_custom(title: "log in", background: .blue){
-            
+            //action 
         }
     }
 }

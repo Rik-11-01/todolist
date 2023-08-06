@@ -8,7 +8,7 @@
 import SwiftUI
 import FirebaseCore
 
-@main
+ @main
 struct todolistApp: App {
     init(){
         FirebaseApp.configure()

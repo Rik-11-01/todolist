@@ -6,3 +6,16 @@
 //
 
 import Foundation
+
+struct todolistitem:Codable,Identifiable{
+    let id:String
+    let title:String
+    let duedate:TimeInterval
+    let createddate:TimeInterval
+    var isdone:Bool
+    
+    mutating func setdone(_ state:Bool){
+        isdone=state
+    }
+    
+}
